@@ -1,0 +1,6 @@
+{
+  "name": "Nossa História de Amor",
+  "description": "Álbum digital romântico e interativo para casal com linha do tempo, galeria de fotos, cartas de amor, trilha sonora e contador em tempo real.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

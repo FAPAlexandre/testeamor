@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <script>
+      (function() {
+        try {
+          var _f = window.fetch;
+          var desc = Object.getOwnPropertyDescriptor(window, 'fetch');
+          if (!desc || desc.configurable) {
+            Object.defineProperty(window, 'fetch', {
+              get: function() { return _f; },
+              set: function(val) { _f = val; },
+              configurable: true,
+              enumerable: true
+            });
+          }
+        } catch (e) {
+          // ignore
+        }
+      })();
+    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nossa História de Amor</title>
+    <meta name="description" content="Álbum digital romântico e interativo para casal com linha do tempo, galeria de fotos, cartas de amor, trilha sonora e contador em tempo real." />
+    <meta property="og:title" content="Nossa História de Amor" />
+    <meta property="og:description" content="Álbum digital romântico e interativo para casal com linha do tempo, galeria de fotos, cartas de amor, trilha sonora e contador em tempo real." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  </head>
+  <body class="bg-[#FAF7F5] text-stone-800 antialiased selection:bg-rose-200 selection:text-rose-900">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+
